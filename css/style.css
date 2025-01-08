@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image:url('/img/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*HEADER*/
+header{
+
+    height: 10%;
+}
+
+header .navbar{
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #617c8722;
+}
+
+.navbar ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+.navbar ul li{ 
+
+    text-align: center;
+    flex-grow: 2;
+    line-height: 8vh;  
+    transition: 1s;
+}
+
+.navbar ul .home{
+    
+    text-align: center;
+}
+
+.navbar ul li a{
+
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul li:hover{
+
+    background-color: #233c4622;
+}
+  
+header .encabezado h1{
+
+    text-align: center;
+    margin: 3% auto;
+    color:#000000;
+    font-family: 'Monserrat';
+}
+
+
+/*CUERPO DE PAGINA*/
+
+.contenedor{
+
+    flex: 1;
+    background-color: #a0e0d736;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 2%;
+}
+
+.contenedor .presentacion{
+
+    line-height: 2.5;
+}
+
+.contenedor .videos video{
+    
+    width: 100%;
+    height: auto;
+}
+
+.contenedor .datos-personales{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contenedor .datos-personales h2, .educacion h2, .conocimientos h2, .proyectos h2, .expLab h2{
+    
+    text-decoration: underline;
+    text-align: center;
+    margin: 2% auto;
+}
+
+.contenedor .datos-personales ul, .conocimientos ul, .proyectos ul, .expLab ul{
+    
+    margin: 1%;
+    text-align: start;
+    line-height: 2;
+    list-style: none;
+}
+
+.contenedor .listaEducacion, .conocimientosLista, .listaProyectos, .listaTrabajos{
+    
+    font-size: medium;
+    text-align: start; 
+}
+/*educacion*/
+
+.videoEdu{
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+}
+
+.educacion ul{
+    margin: 1%;
+    text-align: start;
+    line-height: 2;
+    list-style:square;
+}
+
+/*conocimientos*/
+
+.conocimientosLista {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tarjeta {
+
+    background-color: #a0e0d736;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta i {
+
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*proyectos*/
+
+.proyectos-tarjetas{
+
+    display: flex;
+    margin: 2% auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.proyectos-tarjetas .tarjetaPro{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjetaPro:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.listaProyectos .links-pags{
+
+    text-decoration: none;    
+    color: black;
+}
+
+/*PIE DE PAGINA*/
+
+footer {
+
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #617c8722;
+    text-align: center;
+    padding: 2%;
+}
+
+footer .subtitulo, footer p{
+
+    font-size: smaller;
+    line-height: 2;
+}
+
+.fixed-whatsapp-button {
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 3rem;
+    height: 3rem;
+} 
+
+.redes-sociales {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales li {
+
+    margin: 0 55%;
+}
+
+.redes-sociales a {
+    
+    color: #333;
+    font-size: 1.5em;
+}
