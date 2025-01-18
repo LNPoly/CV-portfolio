@@ -67,7 +67,7 @@ header .navbar{
     background-color: #233c4622;
 }
   
-header .encabezado h1{
+header .header-title h1{
 
     text-align: center;
     margin: 3% auto;
@@ -78,7 +78,7 @@ header .encabezado h1{
 
 /*CUERPO DE PAGINA*/
 
-.contenedor{
+.container{
 
     flex: 1;
     background-color: #a0e0d736;
@@ -88,18 +88,18 @@ header .encabezado h1{
     padding: 2%;
 }
 
-.contenedor .presentacion{
+.container .presentation{
 
     line-height: 2.5;
 }
 
-.contenedor .videos video{
+.container .videos video{
     
     width: 100%;
     height: auto;
 }
 
-.contenedor .datos-personales{
+.container .personal-data{
     
     display: flex;
     flex-direction: column;
@@ -107,14 +107,14 @@ header .encabezado h1{
     text-align: center;
 }
 
-.contenedor .datos-personales h2, .educacion h2, .conocimientos h2, .proyectos h2, .expLab h2{
+.container .personal-data h2, .education h2, .knowledge h2, .projects h2, .expLab h2{
     
     text-decoration: underline;
     text-align: center;
     margin: 2% auto;
 }
 
-.contenedor .datos-personales ul, .conocimientos ul, .proyectos ul, .expLab ul{
+.container .personal-data ul, .knowledge ul, .projects ul, .expLab ul{
     
     margin: 1%;
     text-align: start;
@@ -122,12 +122,12 @@ header .encabezado h1{
     list-style: none;
 }
 
-.contenedor .listaEducacion, .conocimientosLista, .listaProyectos, .listaTrabajos{
+.container .education-list, .knowledge-list, .projects-list, .work-list{
     
     font-size: medium;
     text-align: start; 
 }
-/*educacion*/
+/*education*/
 
 .videoEdu{
     display: flex;
@@ -135,16 +135,16 @@ header .encabezado h1{
     opacity: 50%;
 }
 
-.educacion ul{
+.education ul{
     margin: 1%;
     text-align: start;
     line-height: 2;
     list-style:square;
 }
 
-/*conocimientos*/
+/*knowledge*/
 
-.conocimientosLista {
+.knowledge-list {
 
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +156,7 @@ header .encabezado h1{
     align-items: center;
 }
 
-.tarjeta {
+.card {
 
     background-color: #a0e0d736;
     border-radius: 10px;
@@ -167,28 +167,28 @@ header .encabezado h1{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tarjeta:hover {
+.card:hover {
 
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.tarjeta i {
+.card i {
 
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-.tarjeta p {
+.card p {
 
     margin: 0;
     font-size: 1rem;
     font-weight: bold;
 }
 
-/*proyectos*/
+/*projects*/
 
-.proyectos-tarjetas{
+.projects-cards{
 
     display: flex;
     margin: 2% auto;
@@ -198,18 +198,18 @@ header .encabezado h1{
     align-items: center;
 }
 
-.proyectos-tarjetas .tarjetaPro{
+.projects-cards .card-pro{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tarjetaPro:hover {
+.card-pro:hover {
 
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.listaProyectos .links-pags{
+.projects-list .links-pags{
 
     text-decoration: none;    
     color: black;
@@ -229,7 +229,7 @@ footer {
     padding: 2%;
 }
 
-footer .subtitulo, footer p{
+footer .subtitle, footer p{
 
     font-size: smaller;
     line-height: 2;
@@ -244,19 +244,19 @@ footer .subtitulo, footer p{
     height: 3rem;
 } 
 
-.redes-sociales {
+.social {
 
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-.redes-sociales li {
+.social li {
 
     margin: 0 55%;
 }
 
-.redes-sociales a {
+.social a {
     
     color: #333;
     font-size: 1.5em;
