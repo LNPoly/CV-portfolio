@@ -200,12 +200,14 @@ header .header-title h1{
 
 .projects-cards .card-pro{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+    
 }
 
 .card-pro:hover {
 
     transform: translateY(-5px);
+    scale: 120%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
