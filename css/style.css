@@ -11,7 +11,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image:url('imgenes/background1.jpg');
+    background-image:url('imagenes/background1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
