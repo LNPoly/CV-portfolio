@@ -5,7 +5,7 @@ navbar.className = 'navbar';
 const navList = document.createElement('ul')
 
 const items = [
-    { className: 'home', href: '/index.html', icon: '<i class="fa-solid fa-house"></i>' },
+    { className: 'home', href: 'index.html', icon: '<i class="fa-solid fa-house"></i>' },
     { href: 'pages/info.html', text: 'Datos Personales' },
     { href: 'pages/education.html', text: 'Educación' },
     { href: 'pages/knowledge.html', text: 'Conocimientos' },
