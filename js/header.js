@@ -6,11 +6,11 @@ const navList = document.createElement('ul')
 
 const items = [
     { className: 'home', href: '/index.html', icon: '<i class="fa-solid fa-house"></i>' },
-    { href: '/pages/info.html', text: 'Datos Personales' },
-    { href: '/pages/education.html', text: 'Educación' },
-    { href: '/pages/knowledge.html', text: 'Conocimientos' },
-    { href: '/pages/projects.html', text: 'Proyectos' },
-    { href: '/pages/workExperience.html', text: 'Experiencia Laboral' }
+    { href: 'pages/info.html', text: 'Datos Personales' },
+    { href: 'pages/education.html', text: 'Educación' },
+    { href: 'pages/knowledge.html', text: 'Conocimientos' },
+    { href: 'pages/projects.html', text: 'Proyectos' },
+    { href: 'pages/workExperience.html', text: 'Experiencia Laboral' }
 ];
 
 items.forEach(item => {
