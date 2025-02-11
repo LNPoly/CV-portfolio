@@ -12,7 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image:url('https://github.com/LNPoly/CV-portfolio/images/background1.jpg');
+    background-image:url('CV-portfolio/images/background1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
