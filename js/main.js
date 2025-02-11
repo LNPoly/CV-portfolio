@@ -8,4 +8,12 @@ window.addEventListener('scroll', function() {
       element.style.top = null;
     }
   });
+
+  document.addEventListener('selectstart', (e) => e.preventDefault());
+
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && ['c', 'x', 'v', 'a'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+    }
+});
   
