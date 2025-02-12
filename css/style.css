@@ -145,46 +145,35 @@ header .header-title h1{
 
 /*knowledge*/
 
-.knowledge-list {
+.knowledge {
 
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
-}
-
-.card {
-
-    background-color: #a0e0d736;
-    border-radius: 10px;
-    padding: 1rem;
     text-align: center;
-    width: 150px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.knowledge .content{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-around;
 }
-
-.card i {
-
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+.knowledge .content ul{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    padding: 0;
 }
-
-.card p {
-
-    margin: 0;
-    font-size: 1rem;
-    font-weight: bold;
+.knowledge .content ul i{
+    font-size: 1.5rem;
+    padding-top: 10%;
+    
 }
 
 /*projects*/
