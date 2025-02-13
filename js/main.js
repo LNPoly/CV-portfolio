@@ -11,8 +11,6 @@ window.addEventListener('scroll', function() {
 
   document.addEventListener('selectstart', (e) => e.preventDefault());
 
-  document.addEventListener('contextmenu', (e) => e.preventDefault());
-
   document.addEventListener('keydown', (e) => {
     if (e.ctrlKey && ['c', 'x', 'v', 'a'].includes(e.key.toLowerCase())) {
         e.preventDefault();
