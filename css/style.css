@@ -43,6 +43,7 @@ header .navbar{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 1%;
+    padding: 0;
 }
 
 .navbar ul li{ 
@@ -51,6 +52,7 @@ header .navbar{
     flex-grow: 2;
     line-height: 8vh;  
     transition: 1s;
+    padding: 0 10px;
 }
 
 .navbar ul .home{
@@ -101,19 +103,13 @@ header .header-title h1{
     height: auto;
 }
 
-.container .personal-data{
-    
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-}
+
 
 .container .personal-data h2, .education h2, .knowledge h2, .projects h2, .expLab h2{
-    
+    font-size: x-large;
     text-decoration: underline;
     text-align: center;
-    margin: 2% auto;
+    margin: 1% auto;
 }
 
 .container .personal-data ul, .knowledge ul, .projects ul, .expLab ul{
@@ -131,29 +127,85 @@ header .header-title h1{
 }
 /*Info*/
 
+.container .personal-data{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.data-list{
+    margin: 1%;
+}
+.data-list ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .contact{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .contact form{
-    width: 50%;
+    display: block;
+    width: 90%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #212529;
+    background-color: #ffffff59;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group {
+    margin-bottom: 1px;
+    display: flex; 
+    align-items: center; 
+}
+.form-group label {
+    width: 110px;
+
+}
+
+.form-group input, .form-group textarea {
+    flex: 1;
+    padding: 8px;
+    margin-left: 5px;
+    border-color: #9cc4ce;
+}
+
+textarea {
+    resize: vertical;
 }
 
 label, input, textarea {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    border-radius: 0.375rem;
 }
 button {
-    background-color: #28a745;
+    background-color: #288ea7;
+    width: 15%;
     color: white;
     border: none;
+    border-radius: 0.375rem;
     padding: 10px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #218838;
+    background-color: #214e88;
 }
 
 /*education*/
@@ -184,22 +236,43 @@ button:hover {
     align-items: center;
     text-align: center;
 }
+.title-pro{
+    padding: 10px;
+}
 
 .knowledge .content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
     width: 100%;
     justify-content: space-around;
 }
+.knowledge .description{
+    letter-spacing: 1.5;
+    text-align: justify;
+    line-height: 2;
+}
 .knowledge .content ul{
     display: flex;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
     padding: 0;
 }
+.icons{
+    border: solid 1px;
+    border-radius: 15px;
+    border-color:#288ea7;
+    width: 100%;
+    padding: 2%;
+}
+
+.icons ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+}
 .knowledge .content ul i{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding-top: 10%;
     
 }
