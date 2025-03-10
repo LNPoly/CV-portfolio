@@ -213,6 +213,7 @@ button:hover {
 /*education*/
 
 .videoEdu{
+    height: 15rem;
     display: flex;
     justify-content: center;
     opacity: 50%;
@@ -295,10 +296,26 @@ button:hover {
     align-items: center;
 }
 
+.projects .projects-list p{
+    text-align: justify;    
+}
+
 .projects-cards .card-pro{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
     
+}
+.projects-cards .card-pro .home{
+    height: 30vh;
+    width: 60vh;
+}
+.projects-cards .card-pro .orator{
+    height: 30vh;
+    width: 50vh;
+}
+.projects-cards .card-pro .tickets{
+    height: 30vh;
+    width: 25vh;
 }
 
 .card-pro:hover {
@@ -365,12 +382,6 @@ footer .subtitle, footer p{
 
 @media (max-width: 768px) {
 
-    .container {
-
-        width: 95%;
-        padding: 10px;
-    }
-
     header{
 
         height: 10%;
@@ -387,29 +398,30 @@ footer .subtitle, footer p{
         line-height: 5vh;  
         transition: 1s;
         padding: 0 5px;
-    } 
+    }
 
-    .navbar ul li:hover{
-    
-        background-color: #233c4622;
+    .navbar ul li a{
+        font-size: smaller;
     }
       
     header .header-title h1{
-    
+
         margin: 1% auto;
+        font-size:medium;
+    }
+
+    .container {
+
+        width: 95%;
+        padding: 10px;
     }
 
     .container .personal-data h2, .education h2, .knowledge h2, .projects h2, .expLab h2{
-        font-size: 10px;
+        font-size:medium;
         margin: 1% auto;
     }
 
-    header .header-title h1{
-
-        margin: 1% auto;
-        font-size:large;
-    }
-
+   
     .container .presentation{
 
         line-height: 1.5;
@@ -419,6 +431,55 @@ footer .subtitle, footer p{
 
         width: 2rem;
         height: 2rem;
+
+    }
+
+    /* Info personal*/
+    
+    .data-list{
+        margin: 0 1%;
+    }
+
+    .data-list ul{
+        padding: 0;
+        justify-content: flex-start;
+    }
+    
+    .contact form{
+        width: 90%;
+        padding: 0.3rem 0.2rem;
+        font-size: 1rem;
+        font-weight: 1;
+        line-height: 1;
+
+        border-radius: 0.375rem;
+    }
+    
+    .form-group {
+        margin-bottom: 0.5px; 
+    }
+    
+    .form-group label {
+        width: 80px;
+    
+    }
+    
+    .form-group input, .form-group textarea {
+        flex: 1;
+        padding: 1px;
+        margin-left: 2px;
+    }
+    
+    label, input, textarea {
+        width: 100%;
+        margin-bottom: 8px;
+        border-radius: 0.3rem;
+    }
+    
+    button {
+        width: 25%;
+        border-radius: 0.375rem;
+        padding: 10px;
 
     }
 
@@ -443,5 +504,136 @@ footer .subtitle, footer p{
     .social a {
 
         font-size: 1em;
-    }  
+    }
+    
+    /*Education*/
+
+    .education .education-list .videoEdu{
+        height: 6rem;
+    }
+    
+    .education ul{
+        margin: 1%;
+        font-size: small;
+        line-height: 1.5;
+
+    }
+
+    /*knowledge*/
+
+    .knowledge {
+        gap: 0.5rem;
+    }
+    .title-pro{
+        padding: 5px;
+    }
+
+    .knowledge .content{
+        gap: 0.5rem;
+        width: 90%;
+
+    }
+
+    .knowledge .description{
+        letter-spacing: 1;
+        line-height: 1.5;
+        font-size: 0.8rem;
+    }
+
+    .knowledge .content ul{
+        padding: 0;
+    }
+
+    .icons{
+        border: solid 1px;
+        border-radius: 15px;
+        width: 90%;
+        padding: 1%;
+    }
+
+    .icons ul{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .knowledge .content ul i{
+        font-size: 0.5rem;
+        padding-top: 5%;
+        
+    }
+
+    /*proyects*/
+
+    .projects-cards{
+
+        margin: 1% auto;
+    }
+    .projects .projects-list ul{
+        padding: 0;
+    }
+
+    .projects .projects-list .title-pro{
+        padding: 5px;
+        font-size: smaller;
+    }
+    
+    .projects .projects-list p{
+        font-size:small;
+        text-align: justify;
+        padding: 0;
+        
+    }
+    .projects-cards .card-pro{
+        width:47vh;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+        
+    }
+    .projects-cards .card-pro .home{
+        height: 20vh;
+        width: 47vh;
+    }
+    .projects-cards .card-pro .orator{
+        height: 28vh;
+        width: 47vh;
+    }
+    .projects-cards .card-pro .tickets{
+        margin: 1% 23%;
+        height: 32vh;
+        width: 26vh;
+        padding: 0;
+    }
+    
+    .card-pro:hover {
+    
+        transform: translateY(-5px);
+        scale: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .projects-list .links-pags{
+    
+        text-decoration: none;    
+        color: black;
+    }
+
+    /*work experience*/
+
+    .work-list ul{
+        padding: 0;
+    }
+
+    .work-list .title-pro{
+        font-size:smaller;
+        text-decoration:underline;
+    }
+    .work-list p{
+        font-size:small;
+        text-align:justify;
+        
+    }
 }
